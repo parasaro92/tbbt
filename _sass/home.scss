@@ -9,7 +9,7 @@
   
   .vcenter {
     background-color: $primary-color;
-    color: $dark-font-color;
+    color: $light-color;
     text-align: center;
     padding: 2vh;
     @include vertical-center;
@@ -21,7 +21,7 @@
     }
     
     .links {
-      width: 44vw;
+      width: 48vw;
       margin: 4vh auto 0;
       
       a {
@@ -29,8 +29,12 @@
         display: inline-block;
         transition: transform 0.3s ease in;
 
+        &:hover {
+          transform: scale(1.4);
+        }
+
         &:hover, &:visited, &:active {
-          background-color: $light-color;
+          color: $light-color;
           text-decoration: none;
         }
       }
